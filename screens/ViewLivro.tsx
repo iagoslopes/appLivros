@@ -26,7 +26,7 @@ export default function ViewLivro({ route }) {
           <View style={styles.gradient}></View>
         
           <View style={styles.imageContainer}>
-            <Image source={{ uri: livro.imagem}} style={{ width:150, height:200 }} />
+            <Image source={{ uri: `https://bibliotecaetecmaua.azurewebsites.net/Content/Images/${livro.imagem}` }} style={{ width:150, height:200 }} />
             <Text style={styles.title}>{livro.titulo}</Text>
           </View>
 
