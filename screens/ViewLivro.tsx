@@ -26,7 +26,7 @@ export default function ViewLivro({ route }) {
           <View style={styles.gradient}></View>
         
           <View style={styles.imageContainer}>
-            <Image source={{ uri: `https://bibliotecaetecmaua.azurewebsites.net/Content/Images/${livro.imagem}` }} style={{ width:150, height:200 }} />
+            <Image source={{ uri: `https://bibliotecaetecmaua.azurewebsites.net/Content/Images/${livro.imagem}` }} style={styles.image} />
             <Text style={styles.title}>{livro.titulo}</Text>
           </View>
 
@@ -77,6 +77,11 @@ const styles = StyleSheet.create({
     alignItems: 'center', // Centraliza a imagem e o título
     marginTop: 25,
     marginBottom: 20, // Espaçamento abaixo da imagem e do título
+  },
+  image: {
+    width: 175, 
+    height: 225,
+    resizeMode: 'contain',
   },
   gradient: {
     position: 'absolute',
